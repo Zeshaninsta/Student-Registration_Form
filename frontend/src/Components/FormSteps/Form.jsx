@@ -20,7 +20,6 @@ const Form = () => {
     // Contact Info
     email: "",
     phone: "",
-    street: "",
     city: "",
     address: "",
     zipCode: "",
@@ -50,12 +49,12 @@ const Form = () => {
     setIsSubmitting(true);
     
     // Validation logic
-    const { email, firstName, lastName, age, gender, phone, street, city, zipCode, courseInterest, educationLevel, studyMode } = formData;
+    const { email, firstName, lastName, age, gender, phone, address, city, zipCode, courseInterest, educationLevel, studyMode } = formData;
 
     // Debugging: Log the formData to see what values are being checked
     console.log("Form Data:", formData);
 
-    if (!email || !firstName || !lastName || !age || !gender || !phone || !street || !city || !zipCode || !courseInterest || !educationLevel || !studyMode) {
+    if (!email || !firstName || !lastName || !age || !gender || !phone || !address || !city || !zipCode || !courseInterest || !educationLevel || !studyMode) {
       toast.error("Fill all the fields");
       setIsSubmitting(false);
       return;
