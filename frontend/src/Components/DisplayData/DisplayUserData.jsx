@@ -130,7 +130,7 @@ function DisplayData() {
                         <td className="px-4 py-2 text-sm text-gray-700">{student.gender}</td>
                         <td className="px-4 py-2 text-sm text-gray-700">{student.phone}</td>
                         <td className="px-4 py-2 text-sm text-gray-700 truncate">
-                          {student.address}, {student.city}, {student.state}, {student.zipcode}
+                          {student.address}, {student.city}, {student.state}, {student.zipCode}
                         </td>
                         <td className="px-4 py-2 text-sm text-gray-700">
                           <div className="flex space-x-2">
@@ -191,7 +191,7 @@ function DisplayData() {
                   </div>
                   <div className='flex justify-between items-center px-2 border border-gray-300'>
                     <p className='text-sm text-gray-700'>Zip Code</p>
-                    <p className='text-sm text-gray-700'>{student.zipcode}</p>
+                    <p className='text-sm text-gray-700'>{student.zipCode}</p>
                   </div>
                   <div className="mt-4 flex space-x-2 justify-between">
                     <button onClick={() => handleEdit(student)} className="w-full px-4 py-2 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 duration-300 rounded-md ">
