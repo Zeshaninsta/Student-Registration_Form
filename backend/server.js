@@ -7,7 +7,7 @@ const app = express();
 // Middleware
 app.use(cors(
   cors({
-    origin: ["https://srf-portal.onrender.com", "localhost:5173"],
+    origin: ["https://srf-portal.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
