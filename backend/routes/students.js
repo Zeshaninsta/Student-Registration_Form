@@ -2,6 +2,17 @@ const express = require('express');
 const router = express.Router();
 const Student = require('../Models/Student'); // Adjust the path if necessary
 
+
+
+router.post('/', (req, res) => {
+  try {
+    return res.status(200).json({ message: "Welcome to the Student Registration Form" });
+  } catch (error) {
+    // Handle any potential errors
+    return res.status(500).json({ error: 'An error occurred while processing your request.' });
+  }
+});
+
 // Route to register a new student
 router.post('/register', async (req, res) => {
   try {

@@ -37,7 +37,8 @@ function EditStudent({ studentId, onClose, onUpdate }) {
       setLoading(true);
       try {
         console.log(`Fetching data for student ID: ${studentId}`);
-        const response = await fetch(`http://localhost:5000/api/students/${studentId}`);
+        // i Have changed the end point to the hosted backend for this website, you can change "https://srf-portal-backend.onrender.com" to "http://localhost:5000" to check it locally
+        const response = await fetch(`https://srf-portal-backend.onrender.com/api/students/${studentId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch student data');
         }
@@ -186,7 +187,7 @@ function EditStudent({ studentId, onClose, onUpdate }) {
           <button
             type="button"
             onClick={onClose}
-            className="w-full px-4 py-2 bg-gray-400 text-white rounded-md"
+            className="w-full px-4 py-2 bg-red-400 text-white rounded-md"
           >
             Cancel
           </button>

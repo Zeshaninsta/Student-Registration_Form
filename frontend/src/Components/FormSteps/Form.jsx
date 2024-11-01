@@ -49,7 +49,8 @@ const Form = () => {
   const submitForm = async () => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("http://localhost:5000/api/register", {
+      // i Have changed the end point to the hosted backend for this website, you can change "https://srf-portal-backend.onrender.com" to "http://localhost:5000" to check it locally
+      const response = await fetch("https://srf-portal-backend.onrender.com/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
