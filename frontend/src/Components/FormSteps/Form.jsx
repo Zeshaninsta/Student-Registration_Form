@@ -51,6 +51,10 @@ const Form = () => {
     
     // Validation logic
     const { email, firstName, lastName, age, gender, phone, street, city, zipCode, courseInterest, educationLevel, studyMode } = formData;
+
+    // Debugging: Log the formData to see what values are being checked
+    console.log("Form Data:", formData);
+
     if (!email || !firstName || !lastName || !age || !gender || !phone || !street || !city || !zipCode || !courseInterest || !educationLevel || !studyMode) {
       toast.error("Fill all the fields");
       setIsSubmitting(false);
