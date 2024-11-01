@@ -19,43 +19,29 @@ This project is a **Student Registration Portal** developed as a Full Stack Deve
 ## Screenshots
 
 ### 1. Home Page
-
 **Large Screen:**
 ![Home Page Large Screen](HomepagePC.png)
 
-**Mobile Screen:**
-![Home Page Mobile Screen](HompageMob.png)
-
-### Description:
-The Home Page serves as the entry point for users. It includes a welcoming message and buttons for navigating to the student registration form and the registered student list.
-
----
-
 ### 2. Registration Form Page
-
 **Large Screen:**
 ![Registration Form Page Large Screen](RegistrationPC.png)
 
-**Mobile Screen:**
-![Registration Form Page Mobile Screen](RegMob.png)
-
-### Description:
-The Registration Form Page allows administrators to input student information. Fields include student name, email, phone number, and other relevant details. Once submitted, this information is stored in the database.
-
----
-
 ### 3. Display Registered Students Page
-
 **Large Screen:**
 ![Display Registered Students Page Large Screen](DisplayPC.png)
 
+
+### 1. Home Page
+**Mobile Screen:**
+![Home Page Mobile Screen](HompageMob.png)
+
+### 2. Registration Form Page
+**Mobile Screen:**
+![Registration Form Page Mobile Screen](RegMob.png)
+
+### 3. Display Registered Students Page
 **Mobile Screen:**
 ![Display Registered Students Page Mobile Screen](DisplayMob.png)
-
-### Description:
-The Display Registered Students Page presents a list of all registered students. Administrators can view, edit, or delete student records. The page is designed to be user-friendly and efficient for managing student data.
-
----
 
 ## Tasks Completed
 
