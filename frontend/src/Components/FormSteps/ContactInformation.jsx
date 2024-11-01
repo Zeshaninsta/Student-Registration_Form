@@ -17,6 +17,7 @@ const ContactInformation = ({ formData, handleInputChange, errors }) => {
         value={formData.email}
         onChange={handleInputChange}  
         className='w-full outline-none border border-black/40 p-2'
+        required
         />
         </div>
         <div className='flex flex-col gap-2 w-full mt-3'>
@@ -28,6 +29,7 @@ const ContactInformation = ({ formData, handleInputChange, errors }) => {
         value={formData.phone}
         onChange={handleInputChange}  
         className='w-full outline-none border border-black/40 p-2'
+        required
         />
         </div>
         <div className='flex flex-col gap-2 w-full mt-3'>
@@ -43,6 +45,7 @@ const ContactInformation = ({ formData, handleInputChange, errors }) => {
         onChange={handleInputChange}  
         placeholder='Street'
         className='w-full outline-none border border-black/40 p-2'
+        required
         />
         </div>
         <div className='flex flex-col flex-1'>
@@ -51,6 +54,7 @@ const ContactInformation = ({ formData, handleInputChange, errors }) => {
         name="city"
         value={formData.city}
         onChange={handleInputChange}
+        required
         className='w-full p-2 cursor-pointer'>
           <option value="" className='p-2 cursor-pointer'>Select City</option>
             <option value="Addis" className='p-2 cursor-pointer'>Addis Abeba</option>
@@ -69,6 +73,7 @@ const ContactInformation = ({ formData, handleInputChange, errors }) => {
         name="state"
         value={formData.state}
         onChange={handleInputChange} 
+        required
         className='w-full outline-none border border-black/40 p-2'
         />
         </div>
@@ -80,6 +85,7 @@ const ContactInformation = ({ formData, handleInputChange, errors }) => {
         name="zipCode"
         value={formData.zipCode}
         onChange={handleInputChange}  
+        required
         className='w-full outline-none border border-black/40 p-2'
         />
         </div>

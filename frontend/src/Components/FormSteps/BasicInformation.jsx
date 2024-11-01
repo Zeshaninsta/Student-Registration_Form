@@ -17,6 +17,7 @@ const BasicInformation = ({ formData, handleInputChange, errors }) => {
         value={formData.firstName}
         onChange={handleInputChange}  
         className='w-full outline-none border border-black/40 p-2'
+        required
         />
         </div>
         <div className='flex flex-col gap-2 w-full mt-3'>
@@ -28,6 +29,7 @@ const BasicInformation = ({ formData, handleInputChange, errors }) => {
         value={formData.lastName}
         onChange={handleInputChange}  
         className='w-full outline-none border border-black/40 p-2'
+        required
         />
         </div>
         <div className='flex flex-col md:flex-row gap-2 w-full mt-3'>
@@ -39,6 +41,7 @@ const BasicInformation = ({ formData, handleInputChange, errors }) => {
         value={formData.age}
         onChange={handleInputChange} 
         className='w-full outline-none border border-black/40 p-2'
+        required
         />
         </div>
         <div className='flex flex-col gap-2 w-full'>
@@ -47,6 +50,7 @@ const BasicInformation = ({ formData, handleInputChange, errors }) => {
         name="gender"
         value={formData.gender}
         onChange={handleInputChange}
+        required
         className='w-full p-2 cursor-pointer'>
         <option value="">Select</option>
             <option value="male" className='p-2 cursor-pointer'>Male</option>

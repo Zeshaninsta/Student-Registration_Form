@@ -17,7 +17,8 @@ Preferred Mode of Study */}
           name="educationLevel"
           value={formData.educationLevel}
           onChange={handleInputChange}  
-        className='w-full p-4 cursor-pointer'>
+          required
+          className='w-full p-4 cursor-pointer'>
         <option value="">Select your level</option>
         <option value="high_school">High School</option>
           <option value="undergraduate">Undergraduate</option>
@@ -32,6 +33,7 @@ Preferred Mode of Study */}
         name="courseInterest"
         value={formData.courseInterest}
         onChange={handleInputChange} 
+        required
         className='w-full p-4 cursor-pointer'>
         <option value="">Select a course</option>
         <option value="engineering">Engineering</option>
@@ -47,6 +49,7 @@ Preferred Mode of Study */}
          name="studyMode"
          value={formData.studyMode}
          onChange={handleInputChange} 
+         required
         className='w-full p-4 cursor-pointer'>
         <option value="">Select mode</option>
         <option value="in_person">In Person</option>
