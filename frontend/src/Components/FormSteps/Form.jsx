@@ -48,6 +48,22 @@ const Form = () => {
 
   const submitForm = async () => {
     setIsSubmitting(true);
+    
+    // Validation logic
+    const { email, firstName, lastName, age, gender, phone, street, city, zipCode, courseInterest, educationLevel, studyMode } = formData;
+    if (!email || !firstName || !lastName || !age || !gender || !phone || !street || !city || !zipCode || !courseInterest || !educationLevel || !studyMode) {
+      toast.error("Fill all the fields");
+      setIsSubmitting(false);
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      toast.error("Please enter a valid email address");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // i Have changed the end point to the hosted backend for this website, you can change "https://srf-portal-backend.onrender.com" to "http://localhost:5000" to check it locally
       const response = await fetch("https://srf-portal-backend.onrender.com/api/register", {
