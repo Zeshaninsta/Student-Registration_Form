@@ -2,16 +2,16 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
+
 const app = express();
 
 // Middleware
-app.use(cors(
-  cors({
-    origin: ["https://srf-portal.onrender.com"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"],
-  })
-));
+app.use(cors({
+  origin: ["https://srf-portal.onrender.com"], // Allowed origin
+  methods: ["GET", "POST", "PUT", "DELETE"],  // Allowed HTTP methods
+  allowedHeaders: ["Content-Type"],            // Allowed headers
+}));
+
 app.use(express.json()); // Middleware for parsing JSON bodies
 
 // MongoDB connection
