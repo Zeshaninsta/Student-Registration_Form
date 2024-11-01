@@ -64,7 +64,7 @@ function EditStudent({ studentId, onClose, onUpdate }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/students/${studentId}`, {
+      const response = await fetch(`https://srf-portal-backend.onrender.com/students/${studentId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

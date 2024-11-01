@@ -54,7 +54,7 @@ function DisplayData() {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/students/${id}`, {
+      const response = await fetch(`https://srf-portal-backend.onrender.com/api/students/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
